@@ -5,7 +5,7 @@ package com.jit.openeye
  *@author created by XiaNingIf
  *@data 2020/11/23
  */
-interface Constant {
+interface Const {
     interface ItemViewType {
 
         companion object {

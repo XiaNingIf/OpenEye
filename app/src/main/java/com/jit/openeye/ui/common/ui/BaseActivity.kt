@@ -16,6 +16,7 @@ import com.jit.openeye.R
 import com.jit.openeye.event.MessageEvent
 import com.jit.openeye.extension.logD
 import com.jit.openeye.util.ActivityCollector
+import com.jit.openeye.util.ShareUtil
 import com.umeng.analytics.MobclickAgent
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
@@ -144,6 +145,25 @@ open class BaseActivity :AppCompatActivity() {
         navigateBefore?.setOnClickListener { finish() }
         tvTitle?.isSelected = true  //获取焦点，实现跑马灯效果。
 
+    }
+
+    /**
+     * 调用系统原生分享
+     *
+     * @param shareContent 分享内容
+     * @param shareType SHARE_MORE=0，SHARE_QQ=1，SHARE_WECHAT=2，SHARE_WEIBO=3，SHARE_QQZONE=4
+     */
+    protected fun share(shareContent: String, shareType: Int) {
+        ShareUtil.share(this, shareContent, shareType)
+    }
+
+    /**
+     * 弹出分享对话框
+     *
+     * @param shareContent 分享内容
+     */
+    protected fun showDialogShare(shareContent: String) {
+        com.jit.openeye.extension.showDialogShare(this, shareContent)
     }
 
 }
