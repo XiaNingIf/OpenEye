@@ -46,4 +46,6 @@
     <string name="settings">设置</string>
     <string name="clear_cache_succeed">缓存清除成功</string>
     <string name="currently_not_supported">该功能即将开放，敬请期待</string>
+    <string name="theme_square">主题创作广场</string>
+    <string name="release_works_daily">发布你的作品和日常</string>
 </resources>
