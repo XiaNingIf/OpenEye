@@ -10,6 +10,8 @@ import com.jit.openeye.Const
 import com.jit.openeye.R
 import com.jit.openeye.extension.sharedPreferences
 import com.jit.openeye.extension.showToast
+import com.jit.openeye.ui.common.ui.WebViewActivity
+import com.jit.openeye.ui.login.LoginActivity
 import com.shuyu.gsyvideoplayer.GSYVideoManager
 import com.tencent.sonic.sdk.SonicEngine
 import com.umeng.analytics.MobclickAgent
